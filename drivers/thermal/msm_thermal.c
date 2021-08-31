@@ -1534,7 +1534,7 @@ static int get_cpu_freq_plan_len(int cpu)
 	rcu_read_lock();
 	table_len = dev_pm_opp_get_opp_count(cpu_dev);
 	if (table_len <= 0) {
-		pr_err("Error reading CPU%d freq table len. error:%d\n",
+		pr_debug("Error reading CPU%d freq table len. error:%d\n",
 			cpu, table_len);
 		table_len = 0;
 		goto unlock_and_exit;

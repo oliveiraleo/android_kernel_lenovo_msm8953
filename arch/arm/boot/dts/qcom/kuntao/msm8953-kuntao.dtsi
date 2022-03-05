@@ -622,6 +622,10 @@
 	};
 };
 
+&adv_vreg {
+	status = "disabled";
+};
+
 &spmi_bus {
 	qcom,pm8953@0 {
 		qcom,power-on@800 {

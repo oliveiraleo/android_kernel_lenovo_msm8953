@@ -3607,7 +3607,7 @@ int kswapd_run(int nid)
 		pgdat->kswapd = NULL;
 	} else if (kswapd_cpu_mask) {
 		if (set_kswapd_cpu_mask(pgdat))
-			pr_warn("error setting kswapd cpu affinity mask\n");
+			pr_debug("error setting kswapd cpu affinity mask\n");
 	}
 	return ret;
 }
